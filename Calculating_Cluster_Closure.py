@@ -5,20 +5,20 @@ import os, glob
 import pandas as pd
 from matplotlib.backends.backend_pdf import PdfPages
 
-path = "F:/Cornell/Cluster_closure/2023/Project_Data/results/"
+path = "...../"
 #Search and List all files
 search_criteria = "*.jpeg"
-q = os.path.join("F:/Cornell/Cluster_closure/2023/Project_Data/Original_Images/CC_Images_2021_JR/", search_criteria)
+q = os.path.join(path, search_criteria)
 ifiles = glob.glob(q)
 
 search_criteria = "*.png"
-q = os.path.join("F:/Cornell/Cluster_closure/2023/Project_Data/Segmented_Images/CC_Images_2021_PSP/CC_Images_2021_JR_7/pseudo_color_prediction/", search_criteria)
+q = os.path.join(path, search_criteria)
 files = glob.glob(q)
 
 #This is section is just to check wether you want to run for a specific image
 # seg_img_value = "JJCabFranc_02072021_IMG_1343"
-# img = cv2.imread("F:/Cornell/Cluster_closure/2023/Project_Data/Original_Images/CC_Images_2021_JJ/JJCabFranc_02072021_IMG_1302.jpeg")
-# seg_img = cv2.imread("F:/Cornell/Cluster_closure/2023/Project_Data/Segmented_Images/CC_Images_2021_PSP/CC_Images_2021_JJ_7/pseudo_color_prediction/JJCabFranc_02072021_IMG_1302.png")
+# img = cv2.imread(".../img.jpeg")
+# seg_img = cv2.imread(".../segmented_img.png")
 
 '''toggle this on if the cultivar is tight cluster'''
 cultivar = 1
@@ -80,4 +80,4 @@ with PdfPages('count.pdf') as pdf_pages:
                 c = c + 1
                 plt.close(fig)
 
-df.to_csv(path+"PGRIS_PSP.csv")
+df.to_csv(path+"result.csv")
