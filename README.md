@@ -1,4 +1,4 @@
-# Qunatifying-Grapevine-Cluster-Closure-QCC-
+# Qunatifying Grapevine Cluster Closure QCC
 
 # Contents
 <br/> [Cluster Segmnetation](#cluster-segmnetation)
