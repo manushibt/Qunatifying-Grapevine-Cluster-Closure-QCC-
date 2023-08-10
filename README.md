@@ -45,3 +45,7 @@ Step 3: After adjusting the parameters, you can run the script to calculate the 
 # Stat Analysis
 
 Use stats_Plot.py file to calculate basic stats and Asymptotic.R script to fit regression and calculate the time of cluster closure.
+
+# Notes
+
+For reference purposes and potential comparison by fellow researchers, we have uploaded all the segmnted images in the fodler.
